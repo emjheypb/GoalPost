@@ -14,6 +14,7 @@
 		5F0D5B76245DDE920095A4E2 /* GoalPost.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5F0D5B74245DDE920095A4E2 /* GoalPost.xcdatamodeld */; };
 		5F0D5B78245DDE970095A4E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F0D5B77245DDE970095A4E2 /* Assets.xcassets */; };
 		5F0D5B7B245DDE970095A4E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F0D5B79245DDE970095A4E2 /* LaunchScreen.storyboard */; };
+		5FC7647724614FEB00F3F7E2 /* CreateGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC7647624614FEB00F3F7E2 /* CreateGoalVC.swift */; };
 		5FD70635245FFEF000332883 /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD70634245FFEF000332883 /* GoalCell.swift */; };
 		5FD70637246016AC00332883 /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD70636246016AC00332883 /* GoalType.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,7 @@
 		5F0D5B77245DDE970095A4E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F0D5B7A245DDE970095A4E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F0D5B7C245DDE970095A4E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FC7647624614FEB00F3F7E2 /* CreateGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalVC.swift; sourceTree = "<group>"; };
 		5FD70634245FFEF000332883 /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
 		5FD70636246016AC00332883 /* GoalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				5F0D5B6F245DDE920095A4E2 /* GoalsVC.swift */,
+				5FC7647624614FEB00F3F7E2 /* CreateGoalVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				5F0D5B6C245DDE920095A4E2 /* AppDelegate.swift in Sources */,
 				5FD70637246016AC00332883 /* GoalType.swift in Sources */,
 				5F0D5B76245DDE920095A4E2 /* GoalPost.xcdatamodeld in Sources */,
+				5FC7647724614FEB00F3F7E2 /* CreateGoalVC.swift in Sources */,
 				5FD70635245FFEF000332883 /* GoalCell.swift in Sources */,
 				5F0D5B6E245DDE920095A4E2 /* SceneDelegate.swift in Sources */,
 			);
