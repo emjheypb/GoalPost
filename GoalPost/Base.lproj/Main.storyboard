@@ -273,7 +273,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxD-rE-R3x">
-                                <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="846" width="414" height="50"/>
                                 <color key="backgroundColor" red="0.91764705882352937" green="0.66274509803921566" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="iU3-Jg-Bs6"/>
@@ -291,7 +291,7 @@
                         <constraints>
                             <constraint firstItem="OUH-hh-mey" firstAttribute="top" secondItem="XAT-03-jDW" secondAttribute="bottom" constant="20" id="3b6-jH-HrY"/>
                             <constraint firstItem="OUH-hh-mey" firstAttribute="leading" secondItem="5RV-XA-km6" secondAttribute="leading" constant="20" id="5xY-aU-VXc"/>
-                            <constraint firstItem="pxD-rE-R3x" firstAttribute="bottom" secondItem="5RV-XA-km6" secondAttribute="bottom" id="D82-9m-7wv"/>
+                            <constraint firstItem="pxD-rE-R3x" firstAttribute="bottom" secondItem="Lb1-3U-znO" secondAttribute="bottom" id="D82-9m-7wv"/>
                             <constraint firstItem="5RV-XA-km6" firstAttribute="trailing" secondItem="OUH-hh-mey" secondAttribute="trailing" constant="20" id="MST-JG-SQy"/>
                             <constraint firstItem="pxD-rE-R3x" firstAttribute="leading" secondItem="5RV-XA-km6" secondAttribute="leading" id="W5d-Pj-0gc"/>
                             <constraint firstItem="XAT-03-jDW" firstAttribute="leading" secondItem="5RV-XA-km6" secondAttribute="leading" id="c7g-Gj-VVI"/>
