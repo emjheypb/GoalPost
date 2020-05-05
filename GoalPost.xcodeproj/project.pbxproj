@@ -18,6 +18,7 @@
 		5FC764792461518D00F3F7E2 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC764782461518D00F3F7E2 /* UIViewControllerExt.swift */; };
 		5FC7647B246158B500F3F7E2 /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC7647A246158B500F3F7E2 /* UIViewExt.swift */; };
 		5FC7647D2461623200F3F7E2 /* UIButtonExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC7647C2461623200F3F7E2 /* UIButtonExt.swift */; };
+		5FC7647F246165FD00F3F7E2 /* FinishGoalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC7647E246165FD00F3F7E2 /* FinishGoalVC.swift */; };
 		5FD70635245FFEF000332883 /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD70634245FFEF000332883 /* GoalCell.swift */; };
 		5FD70637246016AC00332883 /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FD70636246016AC00332883 /* GoalType.swift */; };
 /* End PBXBuildFile section */
@@ -36,6 +37,7 @@
 		5FC764782461518D00F3F7E2 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 		5FC7647A246158B500F3F7E2 /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
 		5FC7647C2461623200F3F7E2 /* UIButtonExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExt.swift; sourceTree = "<group>"; };
+		5FC7647E246165FD00F3F7E2 /* FinishGoalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinishGoalVC.swift; sourceTree = "<group>"; };
 		5FD70634245FFEF000332883 /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
 		5FD70636246016AC00332883 /* GoalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +93,7 @@
 			children = (
 				5F0D5B6F245DDE920095A4E2 /* GoalsVC.swift */,
 				5FC7647624614FEB00F3F7E2 /* CreateGoalVC.swift */,
+				5FC7647E246165FD00F3F7E2 /* FinishGoalVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				5F0D5B70245DDE920095A4E2 /* GoalsVC.swift in Sources */,
 				5F0D5B6C245DDE920095A4E2 /* AppDelegate.swift in Sources */,
 				5FC764792461518D00F3F7E2 /* UIViewControllerExt.swift in Sources */,
+				5FC7647F246165FD00F3F7E2 /* FinishGoalVC.swift in Sources */,
 				5FD70637246016AC00332883 /* GoalType.swift in Sources */,
 				5F0D5B76245DDE920095A4E2 /* GoalPost.xcdatamodeld in Sources */,
 				5FC7647724614FEB00F3F7E2 /* CreateGoalVC.swift in Sources */,
