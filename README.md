@@ -6,3 +6,7 @@ Goal tracker app - data persistence with Core Data
 - present view controller without segue (GoalsVC.swift, CreateGoalVC.swift, FinishGoalVC.swift)
 - bind button to keyboard using UIView extension (UIViewExt.swift)
 - change button color on select and deselect using UIButton extension (UIButtonExt.swift)
+
+<img src="Screens/Home.png" width="250"> <img src="Screens/Add Delete Goal.png" width="250">
+<img src="Screens/Add Goal.png" width="250"> <img src="Screens/Add Goal - Filled.png" width="250">
+<img src="Screens/Goal Points.png" width="250"> <img src="Screens/Goal Points - Filled.png" width="250">
