@@ -62,16 +62,12 @@ extension GoalsVC : UITableViewDelegate, UITableViewDataSource {
         return 1
     }
     
-    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    
     func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
         return .none
     }
     
     func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        let deleteAction = UIContextualAction(style: .destructive, title: "") { (contextualAction, view, success) in
+        let deleteAction = UIContextualAction(style: .destructive, title: "") { (rowAction, view, success) in
             self.removeGoal(indexPath: indexPath)
             self.fetchCoreDataObjects()
             tableView.deleteRows(at: [indexPath], with: .fade)
@@ -80,13 +76,40 @@ extension GoalsVC : UITableViewDelegate, UITableViewDataSource {
         deleteAction.backgroundColor = #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1)
         deleteAction.image = UIImage(systemName: "trash")
         
-        let swipeActions = UISwipeActionsConfiguration(actions: [deleteAction])
+        let addAction = UIContextualAction(style: .normal, title: "") { (rowAction, view, success) in
+            self.setProgress(indexPath: indexPath)
+            self.fetchCoreDataObjects()
+            tableView.reloadData()
+        }
+        
+        addAction.backgroundColor = #colorLiteral(red: 0.9385011792, green: 0.7164435983, blue: 0.3331357837, alpha: 1)
+        addAction.image = UIImage(systemName: "plus")
+        
+        let swipeActions = UISwipeActionsConfiguration(actions: [deleteAction, addAction])
         return swipeActions
     }
     
 }
 
 extension GoalsVC {
+    func setProgress(indexPath: IndexPath) {
+        guard let manageContext = appDelegate?.persistentContainer.viewContext else { return }
+        
+        let chosenGoal = goals[indexPath.row]
+        
+        if chosenGoal.goalProgress < chosenGoal.goalCompletionValue {
+            chosenGoal.goalProgress += 1
+            
+            do {
+                try manageContext.save()
+            } catch {
+                debugPrint("Could not set progress: \(error.localizedDescription)")
+            }
+        } else {
+            return
+        }
+    }
+    
     func fetch(completion: (_ complete: Bool) -> ()) {
         guard let manageContext = appDelegate?.persistentContainer.viewContext else { return }
         let fetchRequest = NSFetchRequest<Goal>(entityName: "Goal")

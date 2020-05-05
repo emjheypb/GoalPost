@@ -69,7 +69,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="878-L4-DO7">
+                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="878-L4-DO7">
                                 <rect key="frame" x="0.0" y="90" width="414" height="806"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
@@ -134,18 +134,39 @@
                                                     <color key="textColor" red="0.42745098040000001" green="0.73725490199999999" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P1r-R3-Z7X">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOAL COMPLETE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="arX-1w-bSE">
+                                                            <rect key="frame" x="76" y="14.5" width="262.5" height="41"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="30"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="arX-1w-bSE" firstAttribute="centerY" secondItem="P1r-R3-Z7X" secondAttribute="centerY" id="mEo-Y2-AKJ"/>
+                                                        <constraint firstItem="arX-1w-bSE" firstAttribute="centerX" secondItem="P1r-R3-Z7X" secondAttribute="centerX" id="sy5-hm-efT"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="agu-bn-53R" secondAttribute="bottom" constant="5" id="7fT-nN-kti"/>
                                                 <constraint firstItem="agu-bn-53R" firstAttribute="top" secondItem="zlU-Ny-yX8" secondAttribute="top" constant="5" id="9GW-sh-JRe"/>
                                                 <constraint firstItem="JAK-la-h0z" firstAttribute="top" secondItem="zlU-Ny-yX8" secondAttribute="top" constant="5" id="I7b-Ru-7aA"/>
                                                 <constraint firstItem="JAK-la-h0z" firstAttribute="leading" secondItem="agu-bn-53R" secondAttribute="trailing" constant="10" id="IBs-fX-wln"/>
+                                                <constraint firstItem="P1r-R3-Z7X" firstAttribute="leading" secondItem="zlU-Ny-yX8" secondAttribute="leading" id="R5S-Py-QhE"/>
+                                                <constraint firstAttribute="bottom" secondItem="P1r-R3-Z7X" secondAttribute="bottom" id="TWP-zt-7Ty"/>
                                                 <constraint firstAttribute="trailing" secondItem="JAK-la-h0z" secondAttribute="trailing" constant="5" id="Wfe-Cj-vsa"/>
+                                                <constraint firstAttribute="trailing" secondItem="P1r-R3-Z7X" secondAttribute="trailing" id="Yqn-ZT-r62"/>
                                                 <constraint firstAttribute="bottom" secondItem="JAK-la-h0z" secondAttribute="bottom" constant="5" id="oe9-k9-Zgh"/>
+                                                <constraint firstItem="P1r-R3-Z7X" firstAttribute="top" secondItem="zlU-Ny-yX8" secondAttribute="top" id="uoR-Nt-6kq"/>
                                                 <constraint firstItem="agu-bn-53R" firstAttribute="leading" secondItem="zlU-Ny-yX8" secondAttribute="leading" constant="5" id="wHT-4T-Y9C"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="completionView" destination="P1r-R3-Z7X" id="apF-Kf-vw6"/>
                                             <outlet property="goalDescriptionLbl" destination="lxo-Cc-lNH" id="a5M-P6-vcu"/>
                                             <outlet property="goalProgressLbl" destination="JAK-la-h0z" id="kdc-tL-guz"/>
                                             <outlet property="goalTypeLbl" destination="Pzh-iN-j9h" id="8vt-Hs-LMx"/>
