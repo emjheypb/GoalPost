@@ -378,32 +378,44 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPE-w4-hzU">
-                                <rect key="frame" x="0.0" y="846" width="414" height="50"/>
-                                <color key="backgroundColor" red="0.91764705879999997" green="0.66274509800000003" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GOj-0V-DJl">
+                                <rect key="frame" x="0.0" y="240" width="414" height="656"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPE-w4-hzU">
+                                        <rect key="frame" x="0.0" y="606" width="414" height="50"/>
+                                        <color key="backgroundColor" red="0.91764705879999997" green="0.66274509800000003" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="CXK-Yk-fkg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                        <state key="normal" title="CREATE GOAL">
+                                            <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="createGoalBtnPressed:" destination="G93-k4-dYs" eventType="touchUpInside" id="YLc-pA-pIe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="CXK-Yk-fkg"/>
+                                    <constraint firstItem="LPE-w4-hzU" firstAttribute="leading" secondItem="GOj-0V-DJl" secondAttribute="leading" id="5I6-bt-JAl"/>
+                                    <constraint firstAttribute="trailing" secondItem="LPE-w4-hzU" secondAttribute="trailing" id="HTI-2v-nJ9"/>
+                                    <constraint firstAttribute="bottom" secondItem="LPE-w4-hzU" secondAttribute="bottom" id="c43-Ug-gxE"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
-                                <state key="normal" title="CREATE GOAL">
-                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                </state>
-                                <connections>
-                                    <action selector="createGoalBtnPressed:" destination="G93-k4-dYs" eventType="touchUpInside" id="YLc-pA-pIe"/>
-                                </connections>
-                            </button>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="LPE-w4-hzU" firstAttribute="leading" secondItem="GsU-6X-y8B" secondAttribute="leading" id="Cls-8C-iJh"/>
+                            <constraint firstAttribute="bottom" secondItem="GOj-0V-DJl" secondAttribute="bottom" id="5KQ-hw-K6d"/>
+                            <constraint firstItem="GOj-0V-DJl" firstAttribute="leading" secondItem="GsU-6X-y8B" secondAttribute="leading" id="BF7-cL-URw"/>
+                            <constraint firstItem="GOj-0V-DJl" firstAttribute="top" secondItem="hJh-wt-XzG" secondAttribute="bottom" constant="8" id="DBt-mu-eu7"/>
                             <constraint firstItem="GsU-6X-y8B" firstAttribute="trailing" secondItem="hJh-wt-XzG" secondAttribute="trailing" constant="20" id="GXE-Oh-Chl"/>
                             <constraint firstItem="H1G-d8-wCa" firstAttribute="top" secondItem="WkC-3b-5lX" secondAttribute="top" id="MJo-cA-X6z"/>
                             <constraint firstItem="hJh-wt-XzG" firstAttribute="top" secondItem="H1G-d8-wCa" secondAttribute="bottom" constant="20" id="PvA-0w-slE"/>
-                            <constraint firstItem="LPE-w4-hzU" firstAttribute="trailing" secondItem="GsU-6X-y8B" secondAttribute="trailing" id="lmv-f3-SLQ"/>
-                            <constraint firstAttribute="bottom" secondItem="LPE-w4-hzU" secondAttribute="bottom" id="mKu-li-wXv"/>
                             <constraint firstItem="H1G-d8-wCa" firstAttribute="trailing" secondItem="GsU-6X-y8B" secondAttribute="trailing" id="poe-RC-kNa"/>
                             <constraint firstItem="H1G-d8-wCa" firstAttribute="leading" secondItem="GsU-6X-y8B" secondAttribute="leading" id="siU-9m-5OU"/>
                             <constraint firstItem="hJh-wt-XzG" firstAttribute="leading" secondItem="GsU-6X-y8B" secondAttribute="leading" constant="20" id="ww4-gK-jxY"/>
+                            <constraint firstItem="GOj-0V-DJl" firstAttribute="trailing" secondItem="GsU-6X-y8B" secondAttribute="trailing" id="xZh-MU-GRY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GsU-6X-y8B"/>
                     </view>
