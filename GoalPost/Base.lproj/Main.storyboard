@@ -10,7 +10,7 @@
         <!--GoalsVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="GoalsVC" customModule="GoalPost" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="goalsVC" id="BYZ-38-t0r" customClass="GoalsVC" customModule="GoalPost" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -179,7 +179,7 @@
         <!--Create GoalVC-->
         <scene sceneID="5Th-r9-EbA">
             <objects>
-                <viewController id="I3C-jG-YNY" customClass="CreateGoalVC" customModule="GoalPost" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="createGoalVC" id="I3C-jG-YNY" customClass="CreateGoalVC" customModule="GoalPost" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lb1-3U-znO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -301,6 +301,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5RV-XA-km6"/>
                     </view>
+                    <navigationItem key="navigationItem" id="0dj-VX-Xwf"/>
                     <connections>
                         <outlet property="goalTxtView" destination="XPR-NP-gmF" id="Jvv-Q9-8Vd"/>
                         <outlet property="longTermBtn" destination="1gk-Of-v0e" id="vxI-DY-UXn"/>
